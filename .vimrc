@@ -158,7 +158,7 @@ set laststatus=2
 " Format the status line
 set statusline=\ %{HasPaste()}%F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l\ \ Column:\ %c
 
-set relativenumber
+set number relativenumber
 set showcmd
 
 
@@ -199,12 +199,6 @@ endfunction
 
 " use Ctrl+L to toggle the line number counting method
 function! g:ToggleNuMode()
-  if &nu == 1
-     set nonu   " turn off nu
-     set rnu
-  else
-     set nornu   " turn off rnu
-     set nu
-  endif
+    set relativenumber!
 endfunction
 nnoremap <leader>l :call g:ToggleNuMode()<cr>
