@@ -8,16 +8,24 @@
 // from the command palette or from `Zed` application menu.
 {
   "base_keymap": "VSCode",
+
+  // ui
   "theme": "Ayu Dark",
   "vim_mode": true,
-  "ui_font_size": 16,
-  "buffer_font_size": 16,
   "gutter": {
     "folds": false
   },
   "project_panel": {},
 
-  // vim stuff
+  // font
+  "ui_font_size": 16,
+  "buffer_font_size": 16,
+  "buffer_font_features": {
+    // Disable ligatures
+    "calt": false
+  },
+
+  // vim
   "relative_line_numbers": true,
   "cursor_blink": false,
   "scrollbar": {
