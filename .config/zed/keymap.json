@@ -1,0 +1,42 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      // global bindings (?)
+    }
+  },
+  {
+    // Not sure if this is the optimal context. Seems to work OK.
+    "context": "Editor && vim_mode == normal && (vim_operator == none || vim_operator == n) && !VimWaiting",
+    "bindings": {
+      // command palette
+      "space space": "command_palette::Toggle",
+
+      // window/pane
+      "space w l": "workspace::ActivateNextPane",
+      "space w h": "workspace::ActivatePreviousPane",
+      "space w v": "pane::SplitRight",
+
+      // buffers
+      "space b n": "pane::ActivateNextItem",
+      "space b p": "pane::ActivatePrevItem",
+      "space b b": "tab_switcher::Toggle",
+
+      // find
+      "space f s": "pane::DeploySearch",
+      "space f f": "file_finder::Toggle",
+
+      // tasks
+      "space t s": "task::Spawn",
+      "space t t": "task::Rerun"
+    }
+  },
+  {
+    "context": "ProjectPanel && !editing",
+    "bindings": {
+      "a": "project_panel::NewFile",
+      "d": "project_panel::NewDirectory",
+      "x": "project_panel::Delete"
+    }
+  }
+]
