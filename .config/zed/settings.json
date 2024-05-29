@@ -16,6 +16,9 @@
     "folds": false
   },
   "project_panel": {},
+  "tab_bar": {
+    "show": false
+  },
 
   // font
   "ui_font_size": 16,
