@@ -10,7 +10,7 @@
   "base_keymap": "VSCode",
 
   // ui
-  "theme": "Ayu Dark",
+  "theme": "Gruvbox Light Hard",
   "vim_mode": true,
   "gutter": {
     "folds": false
