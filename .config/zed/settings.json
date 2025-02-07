@@ -52,7 +52,7 @@
   },
 
   // vim
-  "relative_line_numbers": false,
+  "relative_line_numbers": true,
   "cursor_blink": false,
   "use_smartcase_search": true,
   "scrollbar": {
