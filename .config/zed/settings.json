@@ -7,17 +7,40 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "assistant": {
+    "default_model": {
+      "provider": "copilot_chat",
+      "model": "claude-3-5-sonnet"
+    },
+    "version": "2"
+  },
   "base_keymap": "VSCode",
 
+  "features": {
+    "inline_completion_provider": "none"
+  },
+
+  "terminal": {
+    "dock": "right"
+  },
+
+  // misc (sort these)
+  "restore_on_startup": "none",
+  "use_system_path_prompts": false,
+  "soft_wrap": "editor_width",
+
   // ui
-  "theme": "Gruvbox Light Hard",
+  "theme": {
+    "light": "Gruvbox Light Hard",
+    "dark": "Gruvbox Dark Hard"
+  },
   "vim_mode": true,
   "gutter": {
     "folds": false
   },
   "project_panel": {},
   "tab_bar": {
-    "show": false
+    "show": true
   },
 
   // font
@@ -29,8 +52,9 @@
   },
 
   // vim
-  "relative_line_numbers": true,
+  "relative_line_numbers": false,
   "cursor_blink": false,
+  "use_smartcase_search": true,
   "scrollbar": {
     "show": "auto"
   }

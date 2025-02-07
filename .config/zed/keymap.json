@@ -9,6 +9,9 @@
     // Not sure if this is the optimal context. Seems to work OK.
     "context": "Editor && vim_mode == normal && (vim_operator == none || vim_operator == n) && !VimWaiting",
     "bindings": {
+      // hygiene
+      "0": "vim::FirstNonWhitespace",
+
       // command palette
       "space space": "command_palette::Toggle",
 
@@ -19,7 +22,9 @@
 
       // buffers
       "space b n": "pane::ActivateNextItem",
+      "L": "pane::ActivateNextItem",
       "space b p": "pane::ActivatePrevItem",
+      "H": "pane::ActivatePrevItem",
       "space b b": "tab_switcher::Toggle",
 
       // find
@@ -28,7 +33,14 @@
 
       // tasks
       "space t s": "task::Spawn",
-      "space t t": "task::Rerun"
+      "space t t": "task::Rerun",
+
+      // assistant
+      "space a i": "assistant::InlineAssist",
+
+      // sneak
+      "s": ["vim::PushOperator", { "Sneak": {} }],
+      "S": ["vim::PushOperator", { "SneakBackward": {} }]
     }
   },
   {
