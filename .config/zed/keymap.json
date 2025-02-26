@@ -39,8 +39,8 @@
       "space a i": "assistant::InlineAssist",
 
       // sneak
-      "s": ["vim::PushOperator", { "Sneak": {} }],
-      "S": ["vim::PushOperator", { "SneakBackward": {} }]
+      "s": ["vim::PushSneak", {}],
+      "S": ["vim::PushSneakBackward", {}]
     }
   },
   {

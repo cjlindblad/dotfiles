@@ -17,11 +17,7 @@
   "base_keymap": "VSCode",
 
   "features": {
-    "inline_completion_provider": "none"
-  },
-
-  "terminal": {
-    "dock": "right"
+    "edit_prediction_provider": "none"
   },
 
   // misc (sort these)
