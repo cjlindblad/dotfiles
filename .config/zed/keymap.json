@@ -19,12 +19,13 @@
       "space w l": "workspace::ActivateNextPane",
       "space w h": "workspace::ActivatePreviousPane",
       "space w v": "pane::SplitRight",
+      "space w o": "workspace::CloseInactiveTabsAndPanes",
 
       // buffers
       "space b n": "pane::ActivateNextItem",
       "L": "pane::ActivateNextItem",
-      "space b p": "pane::ActivatePrevItem",
-      "H": "pane::ActivatePrevItem",
+      "space b p": "pane::ActivatePreviousItem",
+      "H": "pane::ActivatePreviousItem",
       "space b b": "tab_switcher::Toggle",
 
       // find
