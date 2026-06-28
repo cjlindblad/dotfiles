@@ -70,24 +70,26 @@ return {
         desc = "Workspace symbols",
       },
     },
-    opts = {
-      defaults = {
-        file_ignore_patterns = { "node_modules", ".git/", "bin/", "obj/" },
-        layout_config = {
-          prompt_position = "top",
-        },
-        sorting_strategy = "ascending",
-      },
-      extensions = {
-        ["ui-select"] = require("telescope.themes").get_dropdown({
+    opts = function()
+      return {
+        defaults = {
+          file_ignore_patterns = { "node_modules", ".git/", "bin/", "obj/" },
           layout_config = {
-            height = function(_, _, max_lines)
-              return math.min(max_lines, 25)
-            end,
+            prompt_position = "top",
           },
-        }),
-      },
-    },
+          sorting_strategy = "ascending",
+        },
+        extensions = {
+          ["ui-select"] = require("telescope.themes").get_dropdown({
+            layout_config = {
+              height = function(_, _, max_lines)
+                return math.min(max_lines, 25)
+              end,
+            },
+          }),
+        },
+      }
+    end,
     config = function(_, opts)
       local telescope = require("telescope")
       telescope.setup(opts)
