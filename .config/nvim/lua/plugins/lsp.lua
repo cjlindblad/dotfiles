@@ -17,6 +17,7 @@ return {
           "ts_ls",
           "omnisharp",
           "lua_ls",
+          "ols",
         },
       })
 
@@ -124,6 +125,9 @@ return {
           },
         },
       })
+
+      -- Odin (uses lspconfig defaults; ols installed via mason)
+      vim.lsp.enable("ols")
 
       -- Diagnostic display
       vim.diagnostic.config({

@@ -18,6 +18,7 @@ return {
         "yaml",
         "toml",
         "bash",
+        "odin",
       }
 
       -- Install any missing parsers
