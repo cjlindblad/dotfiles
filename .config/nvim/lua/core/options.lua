@@ -42,5 +42,5 @@ vim.opt.clipboard = "unnamedplus"
 -- Misc
 vim.opt.updatetime = 250
 vim.opt.timeoutlen = 300 -- time for which-key to show (ms)
-vim.opt.wrap = false
+vim.opt.wrap = true
 vim.opt.mouse = "a"
